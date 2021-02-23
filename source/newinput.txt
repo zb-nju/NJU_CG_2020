@@ -1,0 +1,10 @@
+resetCanvas 600 500
+setColor 0 255 0
+drawLine line1 200 150 350 210 Bresenham
+
+setColor 100 100 100
+drawPolygon 999 300 200 400 200 400 50 300 50 Bresenham
+
+clip line1 300 50 400 200 Cohen-Sutherland
+
+saveCanvas 3
